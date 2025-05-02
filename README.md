@@ -37,7 +37,7 @@ Your mission is to return critical documents proving what happened — if you ca
 ![](Images/Settings.png)
 ---
 🎮 Play on Itch.io: [https://alexdanciu.itch.io/once-human](https://alexdanciu.itch.io/once-human)
-📥 Or [download the game directly from GitHub](https://github.com/DanciuAlexTeodor/Once-Human) — scroll up to the top and download the `.zip` or `.exe` from the file list above. 
+📥 Or [download the game directly from GitHub](https://github.com/DanciuAlexTeodor/Once-Human-Game) — scroll up to the top and download the `.zip` or `.exe` from the file list above. 
 
 ## 🖥️ How to Play
 1. Download the release from the `Releases` section
