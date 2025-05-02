@@ -10,7 +10,7 @@ public class Jumpscares : MonoBehaviour
     public bool isMonsterActive = false;
     public GameObject camera;
     public GameObject light;
-    public GameObject player; // Reference to the player
+    public GameObject player; 
     
 
     [Header("Camera Changes")]
@@ -32,10 +32,10 @@ public class Jumpscares : MonoBehaviour
 
 
     [Header("Push Effect")]
-    public float pushDistance = 2f; // How far the player is pushed back
-    public float pushDuration = 0.5f; // How long the push takes
-    public float fallAngle = 15f; // Angle to tilt the player backwards
-    public float rightPushOffset = 0.5f; // How far the player is pushed to the right
+    public float pushDistance = 2f; // how far the player is pushed back by the monster
+    public float pushDuration = 0.5f; // how long the push takes
+    public float fallAngle = 15f; // angle to tilt the player backwards
+    public float rightPushOffset = 0.5f; // how far the player is pushed to the right
     
   
 
@@ -55,8 +55,7 @@ public class Jumpscares : MonoBehaviour
 
                 AudioManager.Instance.PlayAudio(jumpscareSkinlessStairs);
 
-                // Set the monster's position to the player's position
-                
+                // set the monster's position to the player's position
                 if(light != null)
                     light.SetActive(true);
 
@@ -64,13 +63,11 @@ public class Jumpscares : MonoBehaviour
                 GetComponent<BoxCollider>().enabled = false; // Disable the collider
             }
 
-            // Store the original camera and player rotation/position
-
+            // store the original camera and player rotation and position for safety reasons
             originalCameraRotation = camera.transform.rotation;
             originalPlayerRotation = player.transform.rotation;
             originalPlayerPosition = player.transform.position;
 
-            // Start the coroutine for the jumpscare effect
             StartCoroutine(JumpscareCameraEffect());
 
             
@@ -90,9 +87,8 @@ public class Jumpscares : MonoBehaviour
         AudioManager.Instance.PlayAudio(jumpscareSkinlessStairs);
         monsterToSpawn.GetComponent<Animator>().SetTrigger("Jumpscare");
 
-        GetComponent<BoxCollider>().enabled = false; // Disable the collider
+        GetComponent<BoxCollider>().enabled = false; 
 
-        // Store the original camera and player rotation/position
         originalCameraRotation = camera.transform.rotation;
         originalPlayerRotation = player.transform.rotation;
         originalPlayerPosition = player.transform.position;
@@ -104,9 +100,9 @@ public class Jumpscares : MonoBehaviour
         Vector3 targetPosition = player.transform.position;
         float moveSpeedUltra = 4f / 3;
 
-        // Initial and final Y position (adjust these values as needed)
+        // Initial and final Y position 
         float initialHeight = monsterToSpawn.transform.position.y;  // Starting height
-        float minHeight = player.transform.position.y - 0.5f; // Target height (adjust for crawling effect)
+        float minHeight = player.transform.position.y - 0.5f; // Target height (TODO: adjust for crawling effect)
 
         while (elapsedTime < moveSpeedUltra && distanceBetweenZombiePlayer > 0.2f)
         {
@@ -117,17 +113,15 @@ public class Jumpscares : MonoBehaviour
             // Move position normally
             Vector3 newPosition = Vector3.Lerp(originalPosition, targetPosition, elapsedTime / moveSpeedUltra);
 
-            // Decrease the Y position smoothly
+            // decrease the Y position smoothly for effect
             float newY = Mathf.Lerp(initialHeight, minHeight, elapsedTime / moveSpeedUltra);
             newPosition.y = newY;
 
-            // Apply new position with decreased height
             monsterToSpawn.transform.position = newPosition;
 
             yield return null;
         }
 
-        // Start the coroutine to push the player
         StartCoroutine(PushPlayer());
 
         yield return new WaitForSeconds(2f);
@@ -161,22 +155,19 @@ public class Jumpscares : MonoBehaviour
         }
 
         monsterToSpawn.GetComponent<Animator>().SetTrigger("Jumpscare");
-        // Ensure final rotation is exact
+        
         camera.transform.rotation = targetRotationForCamera;
 
-        // Stay looking at the monster for 2 seconds
+      
         yield return new WaitForSeconds(stayDuration);
 
-
-        // Start the coroutine to push the player
-        //StartCoroutine(StayInThisPositionFor2Seconds());
         StartCoroutine(PushPlayer());
        
         yield return new WaitForSeconds(2f);
 
 
 
-        // Return instantly to original rotation
+        // return instantly to original rotation
         Debug.Log("Returning to original rotation");
 
         player.transform.rotation = originalPlayerRotation;
@@ -198,14 +189,12 @@ public class Jumpscares : MonoBehaviour
     private void StopTheOtherJumscaresInTheSameFolder()
     {
         light.SetActive(false);
-
-        // Get the parent of the current jumpscare
         GameObject parentOfTheCurrentJumpscare = transform.parent.gameObject;
 
-        // Get all child transforms of the parent
+      
         Transform[] childrenOfCurrentJumpscareFolder = parentOfTheCurrentJumpscare.GetComponentsInChildren<Transform>();
 
-        // Iterate through each child
+        
         foreach (Transform child in childrenOfCurrentJumpscareFolder)
         {
             // Check if the child has the Jumpscares component
