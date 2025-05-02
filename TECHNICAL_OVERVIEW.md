@@ -14,9 +14,8 @@
     
 
 ----------
-
 ### 🧠 AI & Gameplay Systems
-- **AI Script:** [`MutantScript.cs`](https://github.com/DanciuAlexTeodor/Once-Human/blob/main/SomeScripts/MutantScript.cs)
+- **AI Script:** [`MutantScript.cs`](https://github.com/DanciuAlexTeodor/Once-Human-Game/blob/main/SomeScripts/MutantScript.cs)
 
 -   Custom **Mutant AI** using **NavMesh** and **state machine logic** with:
     
@@ -44,7 +43,7 @@
 ----------
 
 ### 👁️ Immersive Player Mechanics
-  - **Script:** [`FirstPersonController.cs`](https://github.com/DanciuAlexTeodor/Once-Human/blob/main/SomeScripts/FirstPersonController.cs)
+  - **Script:** [`FirstPersonController.cs`](https://github.com/DanciuAlexTeodor/Once-Human-Game/blob/main/SomeScripts/FirstPersonController.cs)
 
 
 -   Smooth **headbob** and **camera sway** effects based on movement state.
@@ -64,7 +63,7 @@
 
 ----------
 ### 😱 Jumpscares System
-- **Script:** [`Jumpscares.cs`](https://github.com/DanciuAlexTeodor/Once-Human/blob/main/SomeScripts/Jumpscares.cs)
+- **Script:** [`Jumpscares.cs`](https://github.com/DanciuAlexTeodor/Once-Human-Game/blob/main/SomeScripts/Jumpscares.cs)
 
 -   Jumpscares are dynamically triggered when the player interacts with specific zones.
     
