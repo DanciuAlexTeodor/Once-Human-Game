@@ -36,8 +36,8 @@ Your mission is to return critical documents proving what happened — if you ca
 
 ![](Images/Settings.png)
 ---
-🎮 Play on Itch.io: [yourgame.itch.io](https://yourgame.itch.io)
-📥 Or download directly from GitHub: [Download Once Human](https://github.com/YourUsername/Once-Human/releases/download/v1.0/OnceHuman.zip)
+🎮 Play on Itch.io: [https://alexdanciu.itch.io/once-human](https://alexdanciu.itch.io/once-human)
+📥 Or [download the game directly from GitHub](https://github.com/DanciuAlexTeodor/Once-Human) — scroll up to the top and download the `.zip` or `.exe` from the file list above. 
 
 ## 🖥️ How to Play
 1. Download the release from the `Releases` section
@@ -48,18 +48,34 @@ Your mission is to return critical documents proving what happened — if you ca
 
 ---
 
-## 📸 Screenshots
-_Add screenshots here (optional)_
-(lab, ending scene)
----
+## 📚 Deep Dive: Behind the Code  
+🔍 Want to see how it all works?  
+👉 [**Explore the Full Technical Overview** →](TECHNICAL_OVERVIEW.md)
+
+
+
+
+## ✨ Optimization & Performance
+This project was developed with a strong focus on:
+
+- 🖼️ **High-quality graphics**: Detailed textures and atmospheric lighting to deliver immersive horror visuals.
+- ⚡ **Fast interactions**: Seamless UI and responsive gameplay to keep the experience fluid and intense.
+- 💾 **Lightweight build**:  
+  - Just **~100 MB** in compressed `.zip` format  
+  - Only **~150 MB** on disk after extraction — optimized for quick downloads and low storage impact.
+
+> ✅ *Ideal for players who want high visual fidelity **without sacrificing performance or storage.***
+`
+
+
 
 
 
 ## 📬 Feedback & Bugs
 Feel free to open issues or contact me if you find bugs or have suggestions!
 📧 Email: [danciualex15@yahoo.com](mailto:danciualex15@yahoo.com)
-💬 Discord: YourName#1234
-
+💬 Discord: alexxdt2004
+`
 
 ## 🚧 Development Status
 
