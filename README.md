@@ -2,19 +2,19 @@
 
 **Once Human** is a first-person horror exploration game set in an abandoned hospital where gruesome experiments were performed.  
 Your mission is to return critical documents proving what happened — if you can survive the horrors inside.
-![](images/MainPage.png)
+![](Images/MainPage.png)
 
 ---
 
 ## 🔹 Features
 - Atmospheric hospital setting with dark ambient lighting
- ![](images/BathroomHall.png)
+ ![](Images/BathroomHall.jpeg)
 - Creepy monsters that hunt you
- ![](images/Mutant.png)
+ ![](Images/Mutant.png)
 - Jumpscares and unsettling lore
-![](images/Lab.png)
+![](Images/Lab.png)
 - Key collection, map navigation, and limited resources
-![](images/Lab.png)
+![](Images/Panel.png)
 ---
 
 
@@ -34,7 +34,7 @@ Your mission is to return critical documents proving what happened — if you ca
 | **C** – Crouch            |                                       |
 | **V** – Lay down          |                                       |
 
-![](images/Settings)
+![](Images/Settings.png)
 ---
 🎮 Play on Itch.io: [yourgame.itch.io](https://yourgame.itch.io)
 📥 Or download directly from GitHub: [Download Once Human](https://github.com/YourUsername/Once-Human/releases/download/v1.0/OnceHuman.zip)
