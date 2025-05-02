@@ -2,11 +2,14 @@
 
 **Once Human** is a first-person horror exploration game set in an abandoned hospital where gruesome experiments were performed.  
 Your mission is to return critical documents proving what happened — if you can survive the horrors inside.
+
 ![](Images/MainPage.png)
 
 ---
 
 ## 🔹 Features
+<br>
+
 - Atmospheric hospital setting with dark ambient lighting
  ![](Images/BathroomHall.jpeg)
 - Creepy monsters that hunt you
@@ -37,7 +40,7 @@ Your mission is to return critical documents proving what happened — if you ca
 ![](Images/Settings.png)
 ---
 🎮 Play on Itch.io: [https://alexdanciu.itch.io/once-human](https://alexdanciu.itch.io/once-human)
-📥 Or [download the game directly from GitHub](https://github.com/DanciuAlexTeodor/Once-Human-Game) — scroll up to the top and download the `.zip` or `.exe` from the file list above. 
+📥 Or [download the game directly from GitHub](https://github.com/DanciuAlexTeodor/Once-Human) — scroll up to the top and download the `.zip` or `.exe` from the file list above. 
 
 ## 🖥️ How to Play
 1. Download the release from the `Releases` section
@@ -47,11 +50,12 @@ Your mission is to return critical documents proving what happened — if you ca
 > Make sure the `Once Human_Data/` folder is in the same directory as the `.exe`!
 
 ---
+<br>
 
 ## 📚 Deep Dive: Behind the Code  
 🔍 Want to see how it all works?  
 👉 [**Explore the Full Technical Overview** →](TECHNICAL_OVERVIEW.md)
-
+<br><br>
 
 
 
@@ -67,7 +71,7 @@ This project was developed with a strong focus on:
 > ✅ *Ideal for players who want high visual fidelity **without sacrificing performance or storage.***
 `
 
-
+<br>
 
 
 
@@ -75,7 +79,9 @@ This project was developed with a strong focus on:
 Feel free to open issues or contact me if you find bugs or have suggestions!
 📧 Email: [danciualex15@yahoo.com](mailto:danciualex15@yahoo.com)
 💬 Discord: alexxdt2004
-`
+
+<br><br>
+
 
 ## 🚧 Development Status
 
