@@ -1,6 +1,6 @@
 ## 🛠️ Technical Overview
 
-**Once Human** was developed over a period of 4 months using Unity, with a strong emphasis on performance, realism, and immersion. Below is a breakdown of the technical aspects and systems integrated into the game:
+**Once Human** was developed over a period of 6 months using Unity, with a strong emphasis on performance, realism, and immersion. Below is a breakdown of the technical aspects and systems integrated into the game:
 
 ----------
 
